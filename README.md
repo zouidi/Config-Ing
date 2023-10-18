@@ -58,10 +58,9 @@ git clone https://github.com/bcgov/von-network
 ```bash
 ./manage build -a acapy-main 
 
-# Définir les variables
-$LEDGER_URL_CONFIG="http://test.bcovrin.vonx.io"        	 
-$TAILS_SERVER_URL_CONFIG="https://tails.vonx.io"			
-$AGENT_CONFIG_FILE="/aries-backchannels/acapy/auto_issuer_config.yaml"
+export LEDGER_URL_CONFIG="http://test.bcovrin.vonx.io"
+export TAILS_SERVER_URL_CONFIG="https://tails.vonx.io"
+export AGENT_CONFIG_FILE="/aries-backchannels/acapy/auto_issuer_config.yaml"
 
 ./manage start -a acapy-main -b acapy-main -n
 ```
