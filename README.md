@@ -2,7 +2,7 @@ Documentation détaillée pour les utilisateurs Windows
 
 Ce guide vous aidera à configurer un environnement de développement pour les projets Aries Mobile et Aries Agent sur Windows. Suivez les étapes ci-dessous pour mettre en place cet environnement.
 
-Étape 1 : Clonage des projets Aries avec Git
+**Étape 1 : Clonage des projets Aries avec Git**
 
 Avant de commencer, assurez-vous d'avoir Git installé sur votre système. Si ce n'est pas déjà fait, vous pouvez le télécharger à partir de https://git-scm.com/downloads et l'installer.
 
@@ -18,7 +18,7 @@ git clone https://github.com/MCN-ING/aries-mobile-test-harness
 git clone https://github.com/hyperledger/aries-agent-test-harness
 ```
 
-Étape 2 : Installation de Rancher Desktop
+**Étape 2 : Installation de Rancher Desktop**
 
 2.1. Pour utiliser Rancher Desktop, vous devez d'abord activer la virtualisation WSL (Windows Subsystem for Linux). Ouvrez l'invite de commandes (cmd) et exécutez la commande suivante :
 ```bash
@@ -27,20 +27,20 @@ wsl --install
 
 2.2. Téléchargez et installez Rancher Desktop à partir de https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.10.0/Rancher.Desktop.Setup.1.10.0.msi
 
-Étape 3 : Configuration de Rancher Desktop
+**Étape 3 : Configuration de Rancher Desktop**
 
 3.1. Ouvrez Rancher Desktop.
 
 3.2. Dans l'onglet WSL (version 1.9.x), assurez-vous de cocher l'option "Enable networking tunnel".
 
-Étape 4 : Clonage du projet von-network
+**Étape 4 : Clonage du projet von-network**
 
 4.1. Dans votre terminal Git Bash, exécutez la commande suivante pour cloner le projet von-network :
 ```bash
 git clone https://github.com/bcgov/von-network
 ```
 
-Étape 5 : Configuration du projet von-network
+**Étape 5 : Configuration du projet von-network**
 
 5.1. Ouvrez Git Bash dans le répertoire du projet "von-network".
 
@@ -50,7 +50,7 @@ git clone https://github.com/bcgov/von-network
 ./manage start --logs            # Redémarrer l'image
 ```
 
-Étape 6 : Configuration du projet Agent
+**Étape 6 : Configuration du projet Agent**
 
 6.1. Ouvrez Git Bash dans le répertoire du projet Agent.
 
@@ -66,14 +66,14 @@ $AGENT_CONFIG_FILE="/aries-backchannels/acapy/auto_issuer_config.yaml"
 ./manage start -a acapy-main -b acapy-main -n
 ```
 
-Étape 7 : Installation de jq
+**Étape 7 : Installation de jq**
 
 7.1. Installez l'outil jq en utilisant Winget. Ouvrez votre terminal et exécutez la commande suivante :
 ```bash
 winget install jq
 ```
 
-Étape 8 : Configuration du projet Aries Mobile Test Harness
+**Étape 8 : Configuration du projet Aries Mobile Test Harness**
 
 8.1. Ouvrez Git Bash, puis naviguez vers le répertoire "aries-mobile-test-harness" en utilisant la commande "cd".
 
