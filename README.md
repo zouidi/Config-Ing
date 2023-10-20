@@ -57,12 +57,9 @@ git clone https://github.com/bcgov/von-network
 6.2. Exécutez les commandes suivantes pour construire le projet et définir des variables :
 ```bash
 ./manage build -a acapy-main 
-
-export LEDGER_URL_CONFIG="http://test.bcovrin.vonx.io"
-export TAILS_SERVER_URL_CONFIG="https://tails.vonx.io"
-export AGENT_CONFIG_FILE="/aries-backchannels/acapy/auto_issuer_config.yaml"
-
-./manage start -a acapy-main -b acapy-main -n
+```
+```bash
+LEDGER_URL_CONFIG=http://test.bcovrin.vonx.io TAILS_SERVER_URL_CONFIG=https://tails.vonx.io AGENT_CONFIG_FILE=/aries-backchannels/acapy/auto_issuer_config.yaml ./manage start -a acapy-main -b acapy-main -n
 ```
 
 **Étape 7 : Installation de jq**
