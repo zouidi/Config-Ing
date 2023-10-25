@@ -75,7 +75,7 @@ winget install jq
 
 8.2. Exécutez les commandes suivantes pour construire le projet et le configurer :
 ```bash
-./manage build -w qc_wallet
+./manage build -w bc_wallet
 
 LEDGER_URL_CONFIG=http://test.bcovrin.vonx.io ./manage run -d LambdaTest -u YOUR_USER_NAME -k YOUR_API_KEY -p Android -a lt://DEVICE_ID -b QCWallet-182-Android-Fetch-Upstream -i "AATH;http://0.0.0.0:9020" -v "AATH;http://0.0.0.0:9030" -t @bc_wallet -t @T002.1-Proof
 ```
